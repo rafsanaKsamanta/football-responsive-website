@@ -1,0 +1,160 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* common styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+
+    width: 1140px;
+    /* background-color: red; */
+    margin: 0 auto;
+
+}
+
+
+
+
+/* ---------------------
+  header section start 
+------------------------*/
+header {
+    background-color: #2D25A0;
+    padding-left: 150px;
+
+}
+
+.header_sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 1140px;
+    margin-right: 156px;
+
+}
+
+
+.header_txt h1 {
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+    width: 485px;
+
+}
+
+.header_img img {
+    width: 100%;
+    margin-top: 100px;
+    width: 550px;
+    height: 435px;
+}
+
+.header_sec:hover .header_img img {
+    transform: scale(1) rotate(12deg);
+    transition: transform 2s ease-in-out;
+}
+
+.header_btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #E02C6D;
+    padding: 10px 25px;
+    border-radius: 15px;
+
+}
+
+.header_btn a .btn {
+    margin-left: 8px;
+    margin-top: 2px;
+}
+
+.header_btn a:hover {
+    background-color: orangered;
+}
+
+/* ---------------------
+  players section start 
+------------------------*/
+
+.player_details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-top: 60px;
+    grid-row-gap: 30px;
+
+}
+
+.player_info {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 7px 40px lightgrey;
+}
+
+.player_info .player_img img {
+    width: 100%;
+    /* height: 256px; */
+}
+
+.player_name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+}
+
+.player_txt {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+    text-align: justify;
+}
+
+/* ---------------------
+  footer section start 
+------------------------*/
+.footer_logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_logo img {
+    /* margin-left: 299px; */
+    width: 484px;
+    height: 110px;
+    margin-top: 150px;
+
+
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.icons a {
+    font-size: 18px;
+    color: #969BAB;
+    background: #6c6c6c4f;
+    padding: 8px 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+/* ---------------------
+  footer section start 
+------------------------*/
+.copyright {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
