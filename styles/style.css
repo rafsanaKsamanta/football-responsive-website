@@ -13,6 +13,11 @@ body {
     /* background-color: red; */
     margin: 0 auto;
 
+
+}
+
+.flexible_container {
+    display: flex;
 }
 
 
@@ -31,7 +36,6 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    width: 1140px;
     margin-right: 156px;
 
 }
@@ -196,4 +200,56 @@ header {
     font-weight: 400;
     color: black;
     text-align: center;
+}
+
+/* ---------------------
+  media query 
+------------------------*/
+/* mobile device */
+@media only screen and (max-width:688px) {
+    .header {
+        padding: 0;
+    }
+
+    .header_sec {
+        width: 360px;
+        height: 695px;
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+    .header_txt h1 {
+        color: white;
+        font-size: 36px;
+        font-weight: 700;
+        width: 278px;
+    }
+
+    .header_img img {
+        width: 329px;
+        height: 261px;
+
+    }
+
+    .header_txt {
+        width: 278px;
+    }
+
+    .container .flexible_container .header_sec {
+        width: 100%;
+    }
+
+    .player_details,
+    .rankigs {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .player_details,
+    .rankigs {
+        flex-direction: column;
+    }
+
 }
