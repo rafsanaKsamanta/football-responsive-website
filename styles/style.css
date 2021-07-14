@@ -102,6 +102,11 @@ header {
     /* height: 256px; */
 }
 
+.player_info:hover .player_img img {
+    transform: scale(1) rotate(12deg);
+    transition: transform 2s ease-in-out;
+}
+
 .player_name {
     font-size: 28px;
     font-weight: 700;
@@ -113,6 +118,42 @@ header {
     font-weight: 400;
     color: #6C6C6C;
     text-align: justify;
+}
+
+/* ---------------------
+  ranking section start 
+------------------------*/
+.rankigs {
+    display: flex;
+    margin-top: 60px;
+}
+
+.man-ranking-title {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.ranking-heading {
+    padding-right: 50px;
+}
+
+.man-rankings {
+    margin-right: 50px;
+}
+
+.man-ranking {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+}
+
+.country-flag p {
+    margin-top: 0px;
+}
+
+.country-flag img {
+    border-radius: 5px;
 }
 
 /* ---------------------
@@ -149,9 +190,7 @@ header {
 
 }
 
-/* ---------------------
-  footer section start 
-------------------------*/
+
 .copyright {
     font-size: 18px;
     font-weight: 400;
